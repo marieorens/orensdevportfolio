@@ -2,14 +2,14 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-// Skills data - we'll keep these in English as they are often the same across languages
+
 const technicalSkills = [
-  "Flutter", "Dart", "Qt Creator", "C++", "UI/UX Design", 
+  "Flutter", "Dart", "Qt Creator", "C++", 
   "Mobile Development", "Desktop Development", "Firebase",
   "Git", "REST APIs", 
 ];
 
-// We'll handle the translation of soft skills through the language context
+
 const softSkills = {
   en: [
     "Problem Solving", "Team Collaboration", "Communication", 
@@ -24,7 +24,7 @@ const softSkills = {
 export function AboutSection() {
   const { t, language } = useLanguage();
   
-  // Get the appropriate soft skills based on current language
+ 
   const currentSoftSkills = softSkills[language];
   
   return (
